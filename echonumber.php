@@ -5,4 +5,7 @@ foreach($teams as $key) {
     $number++;
 }
 
-echo $number;
+echo 'The number of teams in the data sheet is ' . $number . '.';
+?>
+<br>
+<br>

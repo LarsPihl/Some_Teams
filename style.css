@@ -1,0 +1,18 @@
+body {
+    background-color: #f0f8ff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+table {
+    border-spacing: 3rem 1rem;
+}
+
+footer {
+    margin-top: 5rem;
+}
+
