@@ -1,5 +1,7 @@
 <?php
 
+/*'data.php' is required in order to loop through its content and print it into a table.*/
+
 require __DIR__ . '/data.php';
 
 ?>
@@ -19,30 +21,24 @@ require __DIR__ . '/data.php';
 
   <?php
 
-  /*foreach($teams as $value => $key) {
-    echo '<tr>';
-    echo '<td>' . $value . '</td>';
-    echo '<td>' . $key['league'] . '</td>';
-    echo '<td>' . $key['last-time-champions'] . '</td>';
-    echo '<td>' . $key['city'] . '</td>';
-    echo '<td>' . $key['nickname'] . '</td>';
-    echo '<td>' . $key['url'] . '</td>';
-  }*/
-  
+  /*The items of '$teams' are looped through using '$value => $key', in order to not only print the value found in each index's inner array, but
+  also print the name of the index itself. In this case, the outer array index is the name of the team, printed as '$value', and the value of the inner
+  array is printed as '$key'.  */
 
   foreach($teams as $value => $key) {
     ?>
     <tr>
-    <td> <?php echo $value ?></td>
-    <td> <?php echo $key['league']?></td>
-    <td> <?php echo $key['last-time-champions']?></td>
-    <td> <?php echo $key['city']?></td>
-    <td> <?php echo $key['nickname']?></td>
-    <td> <?php echo $key['url']?></td>
-    </tr>
+      <td> <?php echo $value ?></td>
+      <td> <?php echo $key['league']?></td>
+      <td> <?php echo $key['last-time-champions']?></td>
+      <td> <?php echo $key['city']?></td>
+      <td> <?php echo $key['nickname']?></td>
+      <td> <?php echo $key['url']?></td>
+      </tr>
 
     <?php
   }
+
   ?>
   
 </table>

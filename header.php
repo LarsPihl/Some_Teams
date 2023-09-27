@@ -8,5 +8,7 @@
 </head>
 <body>
 
-<h1>Some Teams</h1>
+    <h1>Some Teams</h1>
+
+    <!--Header for the 'index.php'-file.-->
     

@@ -2,3 +2,5 @@
 
 </body>
 </html>
+
+<!--Footer for the 'index.php' file.-->
