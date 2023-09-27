@@ -7,7 +7,7 @@ require __DIR__ . '/data.php';
 ?>
 <br><br>
 
-<h3>The following table display the info found in the 'data.php' file:</h3>
+<h3>The following table displays the info found in the 'data.php' file:</h3>
 
 <table>
   <tr>
